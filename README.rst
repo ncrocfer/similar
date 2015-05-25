@@ -23,8 +23,8 @@ The tool works with Python 2 and Python 3. It can be installed with `Pip` :
     pip install similar
 
 
-Examples
---------
+Notes
+-----
 
 You can also use a file object for the wordlist :
 
