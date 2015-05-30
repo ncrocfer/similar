@@ -1,6 +1,10 @@
 similar - A similar text finder written in Python 
 =================================================
 
+.. image:: https://travis-ci.org/ncrocfer/similar.svg?branch=master
+    :target: https://travis-ci.org/ncrocfer/similar
+
+
 :code:`similar` is a Python library used to find the correct spelling from a misspelled text.
 
 Usage
