@@ -2,7 +2,7 @@
 
 import operator
 import Levenshtein
-from exceptions import NoResultException
+from .exceptions import NoResultException
 
 
 class Similar(object):
