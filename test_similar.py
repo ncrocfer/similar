@@ -9,7 +9,8 @@ from similar.exceptions import NoResultException
 class SimilarTestCase(unittest.TestCase):
 
     def setUp(self):
-        self.haystack = [word.strip() for word in open('test_wordlist.txt')]
+        with open('test_wordlist.txt') as f:
+            self.haystack = [word.strip() for word in f]
         self.needle = 'bananna'
         self.correct_word = 'banana'
 
@@ -23,8 +24,9 @@ class SimilarTestCase(unittest.TestCase):
 
     def test_similar_in_generator(self):
         def genwords():
-            for line in open('test_wordlist.txt'):
-                yield line
+            with open('test_wordlist.txt') as f:
+                for line in f:
+                    yield line
 
         s = Similar(self.needle, genwords())
         self.assertEqual(s.best(), self.correct_word)
