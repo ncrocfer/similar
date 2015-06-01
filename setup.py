@@ -8,7 +8,7 @@ readme = open('README.rst').read()
 
 setup(
     name="similar",
-    version="0.1",
+    version="0.2",
     url='http://github.com/ncrocfer/similar',
     author='Nicolas Crocfer',
     author_email='ncrocfer@gmail.com',
@@ -27,6 +27,7 @@ setup(
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4'
     ),
